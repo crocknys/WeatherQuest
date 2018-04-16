@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
                             JSONArray list = response.getJSONArray("list");
 
-                            for (int c =0; c < list.length(); c++) {
+                            for (int c = 0; c < 40; c = c + 8) {
                                 JSONObject listinfo = list.getJSONObject(c);
                                 JSONArray tableWeather = listinfo.getJSONArray("weather");
 
